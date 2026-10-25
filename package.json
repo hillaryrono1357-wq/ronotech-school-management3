@@ -1,0 +1,14 @@
+{
+  "name": "rono-school-management-lan",
+  "version": "1.4.3",
+  "private": true,
+  "description": "RonoTech School Management System - score sheet and report card PDF export fixed and professionally formatted",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "better-sqlite3": "^11.8.1"
+  }
+}

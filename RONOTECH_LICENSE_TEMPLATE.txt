@@ -1,0 +1,13 @@
+RONOTECH SCHOOL MANAGEMENT SYSTEM
+SOFTWARE LICENSE / INSTALLATION RECORD
+
+Customer School: __________________________________________
+School Contact: ___________________________________________
+Installation Date: ________________________________________
+License/Installation ID: ___________________________________
+Edition: Local / LAN
+Support Period: ____________________________________________
+
+The customer receives the right to use the installed software for the named school/site according to the agreed commercial terms. Source-code ownership, redistribution, modification, support and update rights should be stated in the signed agreement.
+
+Administrator should change the default password immediately after installation.

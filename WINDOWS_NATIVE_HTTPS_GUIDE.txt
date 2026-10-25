@@ -1,0 +1,28 @@
+HTTPS WITHOUT MKCERT
+
+1. Sync any pending offline changes. Stop the school system.
+2. Replace CONFIGURE_HTTPS.ps1, CONFIGURE HTTPS.bat, server.js and
+   START SCHOOL SYSTEM.bat with the versions in this package.
+   Keep your existing data folder and all other program files.
+3. Connect the host to the school router. Run CONFIGURE HTTPS.bat from
+   the system folder using your usual Windows account. Approve the local
+   certificate trust prompt if Windows displays it.
+4. The script uses Windows 10/11 built-in PKI tools; mkcert.exe is unnecessary.
+5. When SUCCESS appears, restart START SCHOOL SYSTEM.bat.
+6. Open tls in the school-system folder. Copy RonoTech-Root-CA.crt to phones
+   and install it under Android Settings > Security > Install certificate >
+   CA certificate (menu names vary). Copy only this CRT file.
+7. Open the HTTPS LAN address printed by the host. There must be no
+   certificate warning. Sign in while connected, then install the app via
+   Chrome menu > Add to Home screen > Install. Load the records you need
+   before disconnecting. Keep the same host address and port for syncing.
+
+Keep tls/server.pfx and tls/server-passphrase.txt private. The signing CA
+private key stays in the original Windows account's certificate store.
+Run future setup under the same Windows account; the CA is reused.
+The server certificate lasts one year; rerun setup to renew it. Changing
+host IP requires rerunning setup. Reserve a fixed host IP in the router.
+HTTP and HTTPS have separate browser storage; sync HTTP edits first.
+The actual Windows certificate generation cannot be tested in the Linux
+workspace; the server's PFX TLS handling was tested separately.
+If Windows reports an error, provide the exact error or screenshot.

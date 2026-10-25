@@ -1,0 +1,42 @@
+OFFLINE WORK AND AUTOMATIC SYNC
+
+INSTALLATION
+Stop the host system. Copy these files to the existing system folder:
+MR RONO TECH SCHOOL MANAGEMENT.html
+server.js
+offline-client.js
+offline-merge.js
+offline-sw.js
+Keep your existing data folder, json-backup.js, and node_modules.
+Restart the host. Refresh each device with Ctrl + F5.
+
+USE
+Sign in while connected to the host and open the pages/data you will need.
+Keep the tab open when leaving the network. Use Save Marks or normal save
+buttons: saved changes are stored on that device. The bottom-right status
+shows whether data is local, syncing, or synced. Sync retries every 15 seconds
+and when the browser detects reconnection. Reconnect to the same host address
+and port. A mobile internet connection alone cannot reach the school's LAN.
+If the session expires, use the status panel's Sign in button when online;
+sign in with the same account. Pending changes remain stored on the device.
+
+Records previously loaded on the device can be viewed/edited offline.
+New logins, account changes, backups, restores and other server-only actions
+need the host. Full JSON backup download requires pending changes to sync first.
+Do not clear browser site data while changes are pending. Use a trusted device.
+The device's browser storage quota limits the size of its offline record copy.
+If saving fails, the app reports the storage error; reconnect before continuing.
+
+CONFLICTS
+Different records/marks merge. Changes to the same value on two devices pause
+sync rather than overwrite either copy. Download pending copy preserves a JSON
+review copy (this is not the full-system restore format). Keep host records
+explicitly discards pending device edits after downloading that copy, then
+reloads the host records. Re-enter reviewed changes as needed.
+
+OFFLINE REOPENING
+On ordinary HTTP LAN addresses, keep the page open while offline. Service
+workers require HTTPS (or localhost). With HTTPS, the app shell and assets it
+has loaded can be cached for offline reopening. HTTPS hosting/certificates are
+not configured by this update. First load and login always require the host.
+Browser storage and cache are specific to the exact address and port used.

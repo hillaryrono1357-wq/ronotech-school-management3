@@ -1,0 +1,38 @@
+RONOTECH / MABASI SCHOOL MANAGEMENT SYSTEM
+===========================================
+
+IMPORTANT:
+The actual application files are now in this folder (no extra nested folder).
+
+FIRST RUN ON WINDOWS
+--------------------
+1. Make sure Node.js is installed.
+2. Double-click: START SCHOOL SYSTEM.bat
+   OR open Command Prompt in this folder and run:
+       npm install
+       npm start
+3. Open the address shown by the starter, normally:
+       http://localhost:3001
+
+FOR OTHER COMPUTERS ON THE SAME LAN
+-----------------------------------
+1. On the main/server computer, run ALLOW SCHOOL NETWORK.bat as Administrator.
+2. Start the school system with START SCHOOL SYSTEM.bat.
+3. Run SHOW SCHOOL LAN IP.bat to see the LAN address.
+4. On another computer/phone connected to the same LAN, open the shown address.
+
+DEFAULT LOGIN
+-------------
+Username: admin
+Password: Set during first-run setup
+Change the password after first login.
+
+WHY THE OLD npm start ERROR HAPPENED
+------------------------------------
+The uploaded project contained the application inside a nested folder, while
+npm start was being run from a different folder. This fixed package places the
+application package.json in the folder you open, and the package already defines:
+    "start": "node server.js"
+
+The previous node_modules folder was also removed from this distribution so that
+npm install on Windows creates the correct Windows-native better-sqlite3 module.

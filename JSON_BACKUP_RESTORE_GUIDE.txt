@@ -1,0 +1,21 @@
+FULL SYSTEM JSON BACKUP & RESTORE
+
+Update an existing installation:
+1. Stop the school system.
+2. Copy these three files from this package into the existing system folder:
+   - MR RONO TECH SCHOOL MANAGEMENT.html
+   - server.js
+   - json-backup.js
+3. Keep your existing data folder and node_modules folder.
+4. Restart the system and refresh the browser with Ctrl + F5.
+
+Sign in as an administrator and open Administration > Automatic Backup & Restore.
+Download All Details (.json) downloads all saved database state, school profile,
+exam results, settings, user accounts (with password hashes), and audit history.
+Upload & Restore JSON accepts the downloaded full-system JSON format.
+Restore replaces the current records, creates a safety database backup first,
+and signs everyone out. Sign in with an account and password from the backup.
+Keep JSON backup files private. Save edited records before downloading.
+Maximum JSON upload size: 100 MB. Active sessions, program files, and older
+backup files are not included in the JSON; sessions are recreated on sign-in.
+The existing database backup controls remain available.
